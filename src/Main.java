@@ -47,6 +47,13 @@ public class Main {
         System.out.println ();
 
 
+
+        System.out.println("Задача к курсовой");
+        int[] number = {23, 56, 78, 53, 47, 89, 144, 345};
+
+        arrayCalculations(number);
+
+
     }
 
     int[] arr = generateRandomArray();
@@ -58,6 +65,20 @@ public class Main {
             arr[i] = random.nextInt(100_000) + 100_000;
         }
         return arr;
+    }
+
+
+
+    //Задача к курсовой
+    public static void arrayCalculations(int[] arr) {
+        for (int i = 2; i < 7; i++) {
+            if (arr[i] % 2 == 0 || arr[i] == 0) {
+                arr[i]++;
+                System.out.println(arr[i]);
+            } else {
+                System.out.println(arr[i]);
+            }
+        }
     }
 
 
